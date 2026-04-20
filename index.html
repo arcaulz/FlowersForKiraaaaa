@@ -29,7 +29,19 @@
         <button>
             <a href="flower.html">Click Bae</a>
         </button>
-        
     </div>
+
+<script>
+const audio = document.getElementById('bgm');
+
+window.addEventListener('click', () => {
+  audio.play();
+});
+
+setInterval(() => {
+  localStorage.setItem("musicTime", audio.currentTime);
+}, 1000);
+</script>
+    
 </body>
 </html>
